@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Play:wght@400;700&display=swap');
+
+.heading{
+    @apply font-mono text-[#1adb74] text-[46px] flex justify-center items-center h-[90vh];
+    b{
+        @apply text-white;
+    }
+}

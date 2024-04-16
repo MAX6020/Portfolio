@@ -1,0 +1,33 @@
+.container{
+    @apply w-[1440px] h-[90vh] m-auto;
+    .heading{
+        @apply text-[#1adb74] text-[46px] mt-[50px] font-mono text-center;
+    }
+    .projects{
+        @apply w-full h-[60vh] pt-[40px] pb-[40px] bg-[#404040]/25 mt-[100px] backdrop-blur-sm flex items-center justify-between shadow-[0px_10px_0px_0px_rgba(26,219,116,0.5)];
+        &__leftbtn{
+            @apply flex justify-center items-center w-[10%] h-full border-r-4 border-[#178149]/25;
+            button{
+                @apply w-[40px] h-[40px] rounded-full flex justify-center items-center transition duration-300;
+                &:hover{
+                    @apply bg-[#1adb74]/10;
+                }
+                &:active{
+                    @apply bg-[#1adb74]/30;
+                }
+            }
+        }
+        &__rightbtn{
+            @apply flex justify-center items-center w-[10%] h-full border-l-4 border-[#178149]/25;
+            button{
+                @apply w-[40px] h-[40px] rounded-full flex justify-center items-center transition duration-300;
+                &:hover{
+                    @apply bg-[#1adb74]/10;
+                }
+                &:active{
+                    @apply bg-[#1adb74]/30;
+                }
+            }
+        }
+    }
+}

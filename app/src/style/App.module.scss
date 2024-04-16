@@ -1,0 +1,6 @@
+.parent {
+    @apply w-full h-full overflow-hidden;
+    #particles{
+        @apply z-[-10] absolute w-full h-full;
+    }
+}

@@ -1,0 +1,29 @@
+.header{
+    @apply w-full h-[60px];
+    &__ul{
+        @apply flex h-[60px] items-center justify-center;
+    }
+    &__li{
+        @apply leading-[60px] flex justify-center items-center text-[#1adb74] bg-[#1adb74]/10 backdrop-blur-sm font-mono text-[36px] transition duration-300 cursor-pointer;
+        &:hover{
+            @apply text-[#fff] bg-[#178149]/50;
+        }
+        &__active{
+            @apply bg-[#1adb74]/50;
+        }
+        a{
+            @apply pr-10 pl-10 relative;
+            &:after{
+                @apply content-[""] block absolute right-0 bottom-[0px] w-0 h-[2px] bg-[#1adb74];
+                transition: width 0.5s;
+            }
+            &:hover:after{
+                @apply content-[""] w-full block absolute left-0 bottom-[0px] h-[2px] bg-[#fff];
+                transition: width 0.5s;
+            }
+        }
+    }
+}
+.container{
+    @apply w-[1400px] m-auto;
+}

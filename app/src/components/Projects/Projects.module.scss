@@ -1,0 +1,9 @@
+.discriptions{
+    @apply w-[80%];
+    &__text{
+        @apply w-[50%];
+    }
+    &__gifs{
+        @apply w-[50%];
+    }
+}

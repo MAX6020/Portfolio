@@ -1,0 +1,35 @@
+.container{
+    @apply w-[1440px] m-auto;
+    .contact__heading{
+        @apply text-[#1adb74] text-[46px] mt-[125px] font-mono text-center;
+        span{
+            @apply text-white font-bold;
+        }
+    }
+    .list{
+        @apply w-full h-[65vh] flex justify-center items-center;
+        &__ul{
+            @apply w-[50%];
+            &__li{
+                @apply flex text-white font-mono text-[32px] p-[10px] m-[20px] bg-[#1adb74]/10 backdrop-blur-sm relative transition duration-300 cursor-pointer;
+                &:after{
+                    @apply content-[""] block absolute right-0 bottom-[0px] w-0 h-[4px] bg-[#1adb74];
+                    transition: width 0.5s;
+                }
+                &:hover:after{
+                    @apply content-[""] w-full block absolute left-0 bottom-[0px] h-[4px] bg-[#fff];
+                    transition: width 0.5s;
+                }
+                &:hover{
+                    @apply bg-[#178149]/50;
+                }
+                img{
+                    @apply w-[50px] h-[50px];
+                }
+                a{
+                    @apply text-center w-full;
+                }
+            }
+        }
+    }
+}

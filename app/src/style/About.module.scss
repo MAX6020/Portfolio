@@ -1,0 +1,55 @@
+.container{
+    .about__heading{
+        @apply text-[#1adb74] text-[46px] mt-[125px] font-mono;
+    }
+    @apply w-[1440px] h-[95vh] m-auto flex flex-col items-center;
+    .about__flex{
+        @apply p-[20px] flex mt-[100px] bg-[#404040]/25 w-full h-[600px] backdrop-blur-sm shadow-[0px_10px_0px_0px_rgba(26,219,116,0.5)];
+        .info{
+            @apply flex flex-col items-center justify-center w-[30%] border-r-4 border-[#178149]/25;
+            &__img{
+                @apply flex flex-col justify-center items-center;
+                &__heading{
+                    @apply text-center font-mono text-white text-[36px] mb-[60px];
+                    span{
+                        @apply text-[#1adb74] font-semibold;
+                    }
+                }
+                img{
+                    @apply w-[300px] h-[300px] rounded-full shadow-[0px_0px_5px_5px_rgba(26,219,116,0.5)] mb-[30px];
+                }
+            }
+            &__discriptions{
+                @apply flex flex-col;
+                &__text{
+                    @apply flex;
+                    label{
+                        @apply text-[#1adb74] font-mono font-semibold text-[24px];
+                    }
+                    p{
+                        @apply text-white text-[24px] font-mono;
+                    }
+                }
+            }
+        }
+        .stack{
+            @apply w-[70%] flex flex-col;
+            &__heading{
+                @apply text-[36px] font-mono text-[#1adb74] text-center;
+            }
+            &__list{
+
+                &__ul{
+                    @apply mt-[20px];
+                    &__li{
+                        @apply flex items-center pt-[22px] pl-[20px] text-white font-mono text-[28px];
+                        span{
+                            @apply text-[#1adb74];
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
