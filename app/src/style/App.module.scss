@@ -1,6 +1,8 @@
 .parent {
-    @apply w-full h-full overflow-hidden;
     #particles{
         @apply z-[-10] absolute w-full h-full;
+    }
+    .container{
+        @apply h-[100%] m-auto w-[1440px] xl2:w-[1280px] xl:w-[1024px] lg:w-[768px] md:w-[480px] sm:w-[320px];
     }
 }

@@ -1,9 +1,18 @@
-.discriptions{
-    @apply w-[80%];
-    &__text{
-        @apply w-[50%];
+.col{
+    @apply mb-[10%] flex flex-col items-center pl-[40px] pr-[40px] md:p-0 sm:p-0 md:border-none sm:border-none  border-l-4 border-r-4 border-[#178149]/25;
+    .title{
+        @apply text-[46px] font-mono text-[#1adb74] text-center;
     }
-    &__gifs{
-        @apply w-[50%];
+    .discriptions{
+        @apply flex flex-col justify-center items-center;
+        &__text{
+            @apply text-white font-mono text-[24px] mt-[5%] text-center;
+        }
+        &__stack{
+            @apply flex justify-around w-full mt-[5%] border-2 border-[#178149]/25 p-[10px] md:border-none sm:border-none;
+        }
+        &__gifs{
+            @apply mt-[5%];
+        }
     }
 }

@@ -58,8 +58,8 @@ const About = () => {
           <motion.div variants={animation} initial="hidden" animate="visible" custom={2} className={styles.info}>
             <div className={styles.info__img}>
               <h1 className={styles.info__img__heading}><span>Frontend&nbsp;</span>developer</h1>
-              <img src={me} alt="" />
             </div>
+            <img src={me} alt="" />
             <div className={styles.info__discriptions}>
               <div className={styles.info__discriptions__text}><label>Name:&nbsp;</label><p>Kovalev Maksim</p></div>
               <div className={styles.info__discriptions__text}><label>Age:&nbsp;</label><p>21</p></div>
@@ -72,13 +72,13 @@ const About = () => {
             </motion.div>
             <div className={styles.stack__list}>
               <ul className={styles.stack__list__ul}>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={3} className={styles.stack__list__ul__li}><span>1.&nbsp;</span><img src={Html} alt="#" />&nbsp;- HTML</motion.li>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={3.5} className={styles.stack__list__ul__li}><span>2.&nbsp;</span><img src={Sass} alt="#" />&nbsp;-  CSS/SASS</motion.li>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={4} className={styles.stack__list__ul__li}><span>3.&nbsp;</span><img src={Js} alt="#" />&nbsp;-  JS</motion.li>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={4.5} className={styles.stack__list__ul__li}><span>4.&nbsp;</span><img src={Ts} alt="#" />&nbsp;-  TS</motion.li>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={5} className={styles.stack__list__ul__li}><span>5.&nbsp;</span><img src={Reac} alt="#" />&nbsp;-  React</motion.li>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={5.5} className={styles.stack__list__ul__li}><span>6.&nbsp;</span><img src={Tailwind} alt="#" />&nbsp;-  Tailwind</motion.li>
-                <motion.li variants={animation} initial="hidden" animate="visible" custom={6} className={styles.stack__list__ul__li}><span>7.&nbsp;</span><img src={Node} alt="#" />&nbsp;-  Node.js</motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={3} className={styles.stack__list__ul__li}><span>1.&nbsp;</span><img src={Html} alt="#" /><p>&nbsp;- HTML</p></motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={3.5} className={styles.stack__list__ul__li}><span>2.&nbsp;</span><img src={Sass} alt="#" /><p>&nbsp;-  CSS/SASS</p></motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={4} className={styles.stack__list__ul__li}><span>3.&nbsp;</span><img src={Js} alt="#" /><p>&nbsp;-  JS</p></motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={4.5} className={styles.stack__list__ul__li}><span>4.&nbsp;</span><img src={Ts} alt="#" /><p>&nbsp;-  TS</p></motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={5} className={styles.stack__list__ul__li}><span>5.&nbsp;</span><img src={Reac} alt="#" /><p>&nbsp;-  React</p></motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={5.5} className={styles.stack__list__ul__li}><span>6.&nbsp;</span><img src={Tailwind} alt="#" /><p>&nbsp;-  Tailwind</p></motion.li>
+                <motion.li variants={animation} initial="hidden" animate="visible" custom={6} className={styles.stack__list__ul__li}><span>7.&nbsp;</span><img src={Node} alt="#" /><p>&nbsp;-  Node.js</p></motion.li>
               </ul>
             </div>
           </div>

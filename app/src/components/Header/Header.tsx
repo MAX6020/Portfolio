@@ -1,7 +1,6 @@
 import {motion} from "framer-motion"
 import styles from "./Header.module.scss"
 import {Link, useLocation} from "react-router-dom"
-import classNames from "classnames"
 
 const Header = () => {
   const currentUrl = useLocation()
@@ -20,7 +19,6 @@ const Header = () => {
       }
     return ( 
         <header className = {styles.header}>
-        <div className = {styles.container}>
           <ul className = {styles.header__ul}>
             <motion.li variants={liAnimation} initial="hidden" animate="visible" custom={1} className = {currentUrl.pathname === '/' ? `${styles.header__li} + ${styles.header__li__active}` : styles.header__li}>
               <Link to="/">HOME</Link>
@@ -35,7 +33,7 @@ const Header = () => {
               <Link to="/Contact">CONTACT</Link>
             </motion.li>
           </ul>
-        </div>
+
       </header>
      );
 }

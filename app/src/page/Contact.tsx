@@ -45,7 +45,9 @@ const Contact = () => {
     return ( 
         <>
         <div className = {styles.container}>
-        <motion.h1 variants={headingAnimation} initial="hidden" animate="visible" custom={1} className={styles.contact__heading}>If you want <span>to get in touch</span> with me</motion.h1>
+          <div className={styles.contact__heading}>
+            <motion.h1 variants={headingAnimation} initial="hidden" animate="visible" custom={1}>If you want <span>to get in touch </span>with me</motion.h1>
+          </div>
             <div className = {styles.list}>
                 <ul className = {styles.list__ul}>
                     <motion.li variants={animation} initial = "hidden" animate = "visible" custom={1} className = {styles.list__ul__li}><img src={vk} alt="" /><a href="https://vk.com/maksouni_bums">https://vk.com/maksouni_bums</a></motion.li>

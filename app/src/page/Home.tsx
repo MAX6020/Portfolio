@@ -25,7 +25,7 @@ const Home = () => {
         animate = "visible"
         exit = "close"
         className = {styles.heading}>
-          Hi, that's my&nbsp;<b> Frontend Developer </b>&nbsp;portfolio
+          Hi, that's my <b>Frontend Developer </b>portfolio
         </motion.h1>
       </>
      );

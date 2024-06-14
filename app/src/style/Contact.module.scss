@@ -1,34 +1,31 @@
-.container{
-    @apply w-[1440px] m-auto;
-    .contact__heading{
-        @apply text-[#1adb74] text-[46px] mt-[125px] font-mono text-center;
-        span{
-            @apply text-white font-bold;
-        }
+.contact__heading{
+    @apply text-[#1adb74] text-[46px] xl:text-[42px] lg:text-[38px] md:text-[42px] md:mt-[60%] sm:text-[36px] sm:text-left sm:mt-[60%] md:mt-[20vh] mt-[125px] font-mono text-center;
+    span{
+        @apply text-white font-bold;
     }
-    .list{
-        @apply w-full h-[65vh] flex justify-center items-center;
-        &__ul{
-            @apply w-[50%];
-            &__li{
-                @apply flex text-white font-mono text-[32px] p-[10px] m-[20px] bg-[#1adb74]/10 backdrop-blur-sm relative transition duration-300 cursor-pointer;
-                &:after{
-                    @apply content-[""] block absolute right-0 bottom-[0px] w-0 h-[4px] bg-[#1adb74];
-                    transition: width 0.5s;
-                }
-                &:hover:after{
-                    @apply content-[""] w-full block absolute left-0 bottom-[0px] h-[4px] bg-[#fff];
-                    transition: width 0.5s;
-                }
-                &:hover{
-                    @apply bg-[#178149]/50;
-                }
-                img{
-                    @apply w-[50px] h-[50px];
-                }
-                a{
-                    @apply text-center w-full;
-                }
+}
+.list{
+    @apply w-full mt-[10%] h-[100%] flex justify-center items-center;
+    &__ul{
+        @apply w-[50%] xl2:w-[60%] xl:w-[70%] lg:w-[100%] md:w-[100%] sm:w-full;
+        &__li{
+            @apply flex items-center sm:justify-center text-white font-mono text-[32px] md:text-[24px] p-[10px] m-[20px] bg-[#1adb74]/10 backdrop-blur-sm relative transition duration-300 cursor-pointer;
+            &:after{
+                @apply content-[""] block absolute right-0 bottom-[0px] w-0 h-[4px] bg-[#1adb74];
+                transition: width 0.5s;
+            }
+            &:hover:after{
+                @apply content-[""] w-full block absolute left-0 bottom-[0px] h-[4px] bg-[#fff];
+                transition: width 0.5s;
+            }
+            &:hover{
+                @apply bg-[#178149]/50;
+            }
+            img{
+                @apply w-[50px] h-[50px];
+            }
+            a{
+                @apply text-center w-full sm:hidden;
             }
         }
     }

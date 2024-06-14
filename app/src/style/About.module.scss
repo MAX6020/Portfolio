@@ -1,55 +1,53 @@
-.container{
-    .about__heading{
-        @apply text-[#1adb74] text-[46px] mt-[125px] font-mono;
-    }
-    @apply w-[1440px] h-[95vh] m-auto flex flex-col items-center;
-    .about__flex{
-        @apply p-[20px] flex mt-[100px] bg-[#404040]/25 w-full h-[600px] backdrop-blur-sm shadow-[0px_10px_0px_0px_rgba(26,219,116,0.5)];
-        .info{
-            @apply flex flex-col items-center justify-center w-[30%] border-r-4 border-[#178149]/25;
-            &__img{
-                @apply flex flex-col justify-center items-center;
-                &__heading{
-                    @apply text-center font-mono text-white text-[36px] mb-[60px];
-                    span{
-                        @apply text-[#1adb74] font-semibold;
-                    }
-                }
-                img{
-                    @apply w-[300px] h-[300px] rounded-full shadow-[0px_0px_5px_5px_rgba(26,219,116,0.5)] mb-[30px];
-                }
-            }
-            &__discriptions{
-                @apply flex flex-col;
-                &__text{
-                    @apply flex;
-                    label{
-                        @apply text-[#1adb74] font-mono font-semibold text-[24px];
-                    }
-                    p{
-                        @apply text-white text-[24px] font-mono;
-                    }
-                }
-            }
+.about__heading {
+  @apply text-[#1adb74] text-center text-[46px] xl:text-[42px] mt-[70px] md:mt-[250px] sm:mt-[250px] font-mono;
+}
+.about__flex {
+  @apply p-[20px] flex lg:flex-col lg:items-center md:flex-col md:items-center sm:flex-col sm:items-center mt-[100px] mb-[20px] bg-[#404040]/25 w-full h-[full] backdrop-blur-sm shadow-[0px_10px_0px_0px_rgba(26,219,116,0.5)];
+  .info {
+    @apply flex flex-col items-center justify-between w-[30%] lg:w-full md:w-full sm:w-full sm:border-none md:border-none lg:border-none border-r-4 border-[#178149]/25;
+    &__img {
+      @apply flex flex-col justify-center items-center;
+      &__heading {
+        @apply text-center font-mono text-white text-[36px] xl:text-[28px] sm:text-[28px];
+        span {
+          @apply text-[#1adb74] font-semibold;
         }
-        .stack{
-            @apply w-[70%] flex flex-col;
-            &__heading{
-                @apply text-[36px] font-mono text-[#1adb74] text-center;
-            }
-            &__list{
-
-                &__ul{
-                    @apply mt-[20px];
-                    &__li{
-                        @apply flex items-center pt-[22px] pl-[20px] text-white font-mono text-[28px];
-                        span{
-                            @apply text-[#1adb74];
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-    
+    img {
+        @apply w-[300px] h-[300px] xl:w-[250px] xl:h-[250px] lg:w-[250px] lg:h-[250px] md:w-[250px] md:h-[250px] md:mt-[30px] lg:mt-[30px] sm:mt-[30px] rounded-full shadow-[0px_0px_5px_5px_rgba(26,219,116,0.5)];
+      }
+    &__discriptions {
+      @apply flex flex-col lg:mt-[30px] md:mt-[30px] sm:mt-[30px];
+      &__text {
+        @apply flex justify-center;
+        label {
+          @apply text-[#1adb74] font-mono font-semibold text-[24px] xl:text-[18px];
+        }
+        p {
+          @apply text-white text-[24px] xl:text-[18px] font-mono;
+        }
+      }
+    }
+  }
+  .stack {
+    @apply w-[70%] flex flex-col lg:items-center lg:border-t-4 lg:border-[#178149]/25 md:border-t-4 md:border-[#178149]/25 sm:border-t-4 sm:border-[#178149]/25;
+    &__heading {
+      @apply text-[36px] xl:text-[28px] font-mono text-[#1adb74] text-center;
+    }
+    &__list {
+      &__ul {
+        @apply mt-[20px] sm:justify-center sm:items-center sm:flex sm:flex-col;
+        &__li {
+          @apply flex items-center pt-[22px] pl-[20px] text-white font-mono text-[28px] xl:text-[22px];
+          span {
+            @apply text-[#1adb74];
+          }
+          p{
+            @apply sm:hidden;
+          }
+        }
+      }
+    }
+  }
 }

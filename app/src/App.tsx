@@ -14,12 +14,14 @@ function App() {
       <div className = {styles.parent}>
         <ParticlesComponent id = {styles.particles}/>
         <Header></Header>
-          <Routes>
-            <Route path="/" Component={Home}/>
-            <Route path="/About" Component={About}/>
-            <Route path="/Project" Component={Project}/>
-            <Route path="/Contact" Component={Contact}/>
-          </Routes>
+          <div className = {styles.container}>
+            <Routes>
+              <Route path="/" Component={Home}/>
+              <Route path="/About" Component={About}/>
+              <Route path="/Project" Component={Project}/>
+              <Route path="/Contact" Component={Contact}/>
+            </Routes>
+          </div>
       </div>
     </BrowserRouter>
   );

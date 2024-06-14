@@ -1,10 +1,10 @@
 .header{
     @apply w-full h-[60px];
     &__ul{
-        @apply flex h-[60px] items-center justify-center;
+        @apply flex h-[60px] items-center justify-center md:block sm:block;
     }
     &__li{
-        @apply leading-[60px] flex justify-center items-center text-[#1adb74] bg-[#1adb74]/10 backdrop-blur-sm font-mono text-[36px] transition duration-300 cursor-pointer;
+        @apply leading-[60px] flex justify-center items-center text-[#1adb74] bg-[#1adb74]/10 backdrop-blur-sm font-mono text-[36px] lg:text-[30px] transition duration-300 cursor-pointer;
         &:hover{
             @apply text-[#fff] bg-[#178149]/50;
         }
